@@ -34,57 +34,58 @@ function writePassword() {
    
     // make a confirm prompt for whether or not to include uppercase and variable that stores the answer      use if statements to store the values
 
-    // var userUppercaseChoice =  window.confirm("Would you like to include uppercase letters?");
+    var userUppercaseChoice =  window.confirm("Would you like to include uppercase letters?");
 
-    // if (userUppercaseChoice) {
-    //   userUppercaseChoice = userUppercaseChoice;
-    // } else {
-    //   userUppercaseChoice = userUppercaseChoice;
-    // }
+    if (userUppercaseChoice) {
+      userUppercaseChoice = userUppercaseChoice;
+    } else {
+      userUppercaseChoice = userUppercaseChoice;
+    }
 
-    // console.log (userUppercaseChoice);
+    console.log (userUppercaseChoice);
 
     // // make a confirm prompt for whether or not to include lowercase and variable that stores the answer      use if statements to store the values
 
-    // var userLowercaseChoice =  window.confirm("Would you like to include lowercase letters?");
+    var userLowercaseChoice =  window.confirm("Would you like to include lowercase letters?");
 
-    // if (userLowercaseChoice) {
-    //   userLowercaseChoice = userLowercaseChoice;
-    // } else {
-    //   userLowercaseChoice = userLowercaseChoice;
-    // }
+    if (userLowercaseChoice) {
+      userLowercaseChoice = userLowercaseChoice;
+    } else {
+      userLowercaseChoice = userLowercaseChoice;
+    }
 
-    // console.log (userLowercaseChoice);
+    console.log (userLowercaseChoice);
 
     // // make a confirm prompt for whether or not to include numbers and variable that stores the answer      use if statements to store the values
 
-    // var userNumbersChoice =  window.confirm("Would you like to include numbers?");
+    var userNumbersChoice =  window.confirm("Would you like to include numbers?");
 
-    // if (userNumbersChoice) {
-    //   userNumbersChoice = userNumbersChoice;
-    // } else {
-    //   userNumbersChoice = userNumbersChoice;
-    // }
+    if (userNumbersChoice) {
+      userNumbersChoice = userNumbersChoice;
+    } else {
+      userNumbersChoice = userNumbersChoice;
+    }
 
-    // console.log (userNumbersChoice);
+    console.log (userNumbersChoice);
 
     // // make a confirm prompt for whether or not to include spcial characters and variable that stores the answer   use if statements to store the values
 
-    // var userSpecialChoice =  window.confirm("Would you like to include special characters?");
+    var userSpecialChoice =  window.confirm("Would you like to include special characters?");
 
-    // if (userSpecialChoice) {
-    //   userSpecialChoice = userSpecialChoice;
-    // } else {
-    //   userSpecialChoice = userSpecialChoice;
-    // }
+    if (userSpecialChoice) {
+      userSpecialChoice = userSpecialChoice;
+    } else {
+      userSpecialChoice = userSpecialChoice;
+    }
 
-    // console.log (userSpecialChoice);
+    console.log (userSpecialChoice);
 
     // // make an alert that tells you to need to pick at least one of the arrays and them returns the the beggining of prompts
-    // if (!userUppercaseChoice && !userLowercaseChoice && !userNumbersChoice && !userSpecialChoice) {
-    //   window.alert("You much confirm at least one of the criteria previously listed.");
-    //   generatePassword();
-    // }
+    
+    if (!userUppercaseChoice && !userLowercaseChoice && !userNumbersChoice && !userSpecialChoice) {
+      window.alert("You much confirm at least one of the criteria previously listed.");
+      generatePassword();
+    }
   
 
     // if statement to pull the correct combop of array info into chosenArrays array
