@@ -65,70 +65,102 @@ function writePassword() {
 
     // if statement to pull the correct combop of array info into chosenArrays array
     // uppper, lower, num, spec  CHECKJ
-    if (userUppercaseChoice === true && userLowercaseChoice === true && userNumbersChoice === true && userSpecialChoice === true) {
-      var chosenArrays = uppercaseCharacters.concat(lowercaseCharacters, numericCharacters, specialCharacters);
-      console.log(chosenArrays);
+
+    if (userUppercaseChoice === true) {
+      chosenArrays.concat(uppercaseCharacters);
     }
-    // upper, lower, num    CHECK
-    else if (userUppercaseChoice === true && userLowercaseChoice === true && userNumbersChoice === true && userSpecialChoice === false) {
-      var chosenArrays = uppercaseCharacters.concat(lowercaseCharacters, numericCharacters);
-      console.log(chosenArrays);
+
+    if (userLowercaseChoice === true) {
+      chosenArrays.concat(lowerCharacters);
     }
-    // upper, lower   CHECK
-    else if (userUppercaseChoice === true && userLowercaseChoice === true && userNumbersChoice === false && userSpecialChoice === false) {
-      var chosenArrays = uppercaseCharacters.concat(lowercaseCharacters);
-      console.log(chosenArrays);
+
+
+    if (userNumbersChoice === true) {
+      chosenArrays.concat(numericCharacters);
     }
-    // upper, num   CHECK
-    else if (userUppercaseChoice === true && userLowercaseChoice === false && userNumbersChoice === true && userSpecialChoice === false) {
-      var chosenArrays = uppercaseCharacters.concat(numericCharacters);
-      console.log(chosenArrays);
+
+
+    if (userSpecialChoice === true) {
+      chosenArrays.concat(specialCharacters);
     }
-    // upper, spec    CHECK
-    else if (userUppercaseChoice === true && userLowercaseChoice === false && userNumbersChoice === false && userSpecialChoice === true) {
-      var chosenArrays = uppercaseCharacters.concat(specialCharacters);
-      console.log(chosenArrays);
-    }
-    // upper    CHECK
-    else if (userUppercaseChoice === true && userLowercaseChoice === false && userNumbersChoice === false && userSpecialChoice === false) {
-      var chosenArrays = uppercaseCharacters;
-      console.log(chosenArrays);
-    }
-    // lower, num, spec   CHECK
-    else if (userUppercaseChoice === false && userLowercaseChoice === true && userNumbersChoice === true && userSpecialChoice === true) {
-      var chosenArrays = lowercaseCharacters.concat(numericCharacters, specialCharacters);
-      console.log(chosenArrays);
-    }
-    // lower, num   CHECK
-    else if (userUppercaseChoice === false && userLowercaseChoice === true && userNumbersChoice === true && userSpecialChoice === false) {
-      var chosenArrays = lowercaseCharacters.concat(numericCharacters);
-      console.log(chosenArrays);
-    }
-    // lower, spec    CHECK
-    else if (userUppercaseChoice === false && userLowercaseChoice === true && userNumbersChoice === false && userSpecialChoice === true) {
-      var chosenArrays = lowercaseCharacters.concat(specialCharacters);
-      console.log(chosenArrays);
-    }
-    // lower    CHECK
-    else if (userUppercaseChoice === false && userLowercaseChoice === true && userNumbersChoice === false && userSpecialChoice === false) {
-      var chosenArrays = lowercaseCharacters;
-      console.log(chosenArrays);
-    }
-    // num, spec    CHECK
-    else if (userUppercaseChoice === false && userLowercaseChoice === false && userNumbersChoice === true && userSpecialChoice === true) {
-      var chosenArrays = numericCharacters.concat(specialCharacters);
-      console.log(chosenArrays);
-    }
-    // num    CHECK
-    else if (userUppercaseChoice === false && userLowercaseChoice === false && userNumbersChoice === true && userSpecialChoice === false) {
-      var chosenArrays = numericCharacters;
-      console.log(chosenArrays);
-    }
-    // spec   CHECK
-    else {
-      var chosenArrays = specialCharacters;
-      console.log(chosenArrays);
-    }
+
+    console.log(chosenArrays)
+
+
+
+
+    // if (userUppercaseChoice === true && userLowercaseChoice === true && userNumbersChoice === true && userSpecialChoice === true) {
+    //   var chosenArrays = uppercaseCharacters.concat(lowercaseCharacters, numericCharacters, specialCharacters);
+    //   console.log(chosenArrays);
+    // }
+
+    // if (userUppercaseChoice === true) {
+    //   uppercaseCharacters.concat(chosenArray);
+    // }
+
+    // // upper, lower, num    CHECK
+    // else if (userUppercaseChoice === true && userLowercaseChoice === true && userNumbersChoice === true && userSpecialChoice === false) {
+    //   var chosenArrays = uppercaseCharacters.concat(lowercaseCharacters, numericCharacters);
+    //   console.log(chosenArrays);
+    // }
+
+
+    
+    // // upper, lower   CHECK
+    // else if (userUppercaseChoice === true && userLowercaseChoice === true && userNumbersChoice === false && userSpecialChoice === false) {
+    //   var chosenArrays = uppercaseCharacters.concat(lowercaseCharacters);
+    //   console.log(chosenArrays);
+    // }
+    // // upper, num   CHECK
+    // else if (userUppercaseChoice === true && userLowercaseChoice === false && userNumbersChoice === true && userSpecialChoice === false) {
+    //   var chosenArrays = uppercaseCharacters.concat(numericCharacters);
+    //   console.log(chosenArrays);
+    // }
+    // // upper, spec    CHECK
+    // else if (userUppercaseChoice === true && userLowercaseChoice === false && userNumbersChoice === false && userSpecialChoice === true) {
+    //   var chosenArrays = uppercaseCharacters.concat(specialCharacters);
+    //   console.log(chosenArrays);
+    // }
+    // // upper    CHECK
+    // else if (userUppercaseChoice === true && userLowercaseChoice === false && userNumbersChoice === false && userSpecialChoice === false) {
+    //   var chosenArrays = uppercaseCharacters;
+    //   console.log(chosenArrays);
+    // }
+    // // lower, num, spec   CHECK
+    // else if (userUppercaseChoice === false && userLowercaseChoice === true && userNumbersChoice === true && userSpecialChoice === true) {
+    //   var chosenArrays = lowercaseCharacters.concat(numericCharacters, specialCharacters);
+    //   console.log(chosenArrays);
+    // }
+    // // lower, num   CHECK
+    // else if (userUppercaseChoice === false && userLowercaseChoice === true && userNumbersChoice === true && userSpecialChoice === false) {
+    //   var chosenArrays = lowercaseCharacters.concat(numericCharacters);
+    //   console.log(chosenArrays);
+    // }
+    // // lower, spec    CHECK
+    // else if (userUppercaseChoice === false && userLowercaseChoice === true && userNumbersChoice === false && userSpecialChoice === true) {
+    //   var chosenArrays = lowercaseCharacters.concat(specialCharacters);
+    //   console.log(chosenArrays);
+    // }
+    // // lower    CHECK
+    // else if (userUppercaseChoice === false && userLowercaseChoice === true && userNumbersChoice === false && userSpecialChoice === false) {
+    //   var chosenArrays = lowercaseCharacters;
+    //   console.log(chosenArrays);
+    // }
+    // // num, spec    CHECK
+    // else if (userUppercaseChoice === false && userLowercaseChoice === false && userNumbersChoice === true && userSpecialChoice === true) {
+    //   var chosenArrays = numericCharacters.concat(specialCharacters);
+    //   console.log(chosenArrays);
+    // }
+    // // num    CHECK
+    // else if (userUppercaseChoice === false && userLowercaseChoice === false && userNumbersChoice === true && userSpecialChoice === false) {
+    //   var chosenArrays = numericCharacters;
+    //   console.log(chosenArrays);
+    // }
+    // // spec   CHECK
+    // else {
+    //   var chosenArrays = specialCharacters;
+    //   console.log(chosenArrays);
+    // }
 
     // generate password that uses random characters from selected criteria
     //  use for loop to randomly choose index in chosenArray and store character in a new variable. loop until  is designated length. each character will be concatinated with the previous one to lengthen the password
