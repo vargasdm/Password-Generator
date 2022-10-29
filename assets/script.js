@@ -134,7 +134,7 @@ function writePassword() {
 //  use for loop to randomly choose index in chosenArray and store character in a new variable. loop until  is designated length. each character will be concatinated with the previous one to lengthen the password
 // take chosenArrays and randomly select an index, store in variable, concat the next chosen index tot he previouse opn and sotre the new value
 for (var i = 0; i < userLengthChoice; i++) {
-  var index = Math.floor(Math.random() * chosenArrays.length);
+  var index = Math.floor(Math.random() * userLengthChoice);
   var chosenIndex = chosenArrays[index];
   generatedPassword = generatedPassword.concat(chosenIndex);
 }
