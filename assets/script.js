@@ -67,21 +67,21 @@ function writePassword() {
     // uppper, lower, num, spec  CHECKJ
 
     if (userUppercaseChoice === true) {
-      chosenArrays.concat(uppercaseCharacters);
+      chosenArrays = chosenArrays.concat(uppercaseCharacters);
     }
 
     if (userLowercaseChoice === true) {
-      chosenArrays.concat(lowerCharacters);
+      chosenArrays = chosenArrays.concat(lowercaseCharacters);
     }
 
 
     if (userNumbersChoice === true) {
-      chosenArrays.concat(numericCharacters);
+      chosenArrays = chosenArrays.concat(numericCharacters);
     }
 
 
     if (userSpecialChoice === true) {
-      chosenArrays.concat(specialCharacters);
+      chosenArrays = chosenArrays.concat(specialCharacters);
     }
 
     console.log(chosenArrays)
