@@ -35,23 +35,11 @@ function writePassword() {
 
     var userUppercaseChoice =  window.confirm("Would you like to include uppercase letters?");
 
-    if (userUppercaseChoice === true) {
-      userUppercaseChoice = userUppercaseChoice;
-    } else {
-      userUppercaseChoice = userUppercaseChoice;
-    }
-
     console.log (userUppercaseChoice);
 
     // // make a confirm prompt for whether or not to include lowercase and variable that stores the answer      use if statements to store the values
 
     var userLowercaseChoice =  window.confirm("Would you like to include lowercase letters?");
-
-    if (userLowercaseChoice) {
-      userLowercaseChoice = userLowercaseChoice;
-    } else {
-      userLowercaseChoice = userLowercaseChoice;
-    }
 
     console.log (userLowercaseChoice);
 
@@ -59,23 +47,11 @@ function writePassword() {
 
     var userNumbersChoice =  window.confirm("Would you like to include numbers?");
 
-    if (userNumbersChoice) {
-      userNumbersChoice = userNumbersChoice;
-    } else {
-      userNumbersChoice = userNumbersChoice;
-    }
-
     console.log (userNumbersChoice);
 
     // // make a confirm prompt for whether or not to include spcial characters and variable that stores the answer   use if statements to store the values
 
     var userSpecialChoice =  window.confirm("Would you like to include special characters?");
-
-    if (userSpecialChoice) {
-      userSpecialChoice = userSpecialChoice;
-    } else {
-      userSpecialChoice = userSpecialChoice;
-    }
 
     console.log (userSpecialChoice);
 
