@@ -13,24 +13,24 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   // declare generatepassword function
-  // function generatePassword() {
-  //   // make a window prompt ath asked for the length of password and variable that storeses the answer
-  //   var userLengthChoice =  window.prompt("How many characters long do you want your password?");
-  //   // if statment that either takes the number they choose,  or denies if <8 or >128
-  //   if ( userLengthChoice >= 8 && userLengthChoice <= 128) {
-  //     userLengthChoice = userLengthChoice
-  //      // if statment for if user presses cancel it ends the function
-  //     } else if (!userLengthChoice) {
-  //       return;
-  //     } else if (isNaN(userLengthChoice)) { 
-  //       window.alert("Your password length must be a number.");
-  //       generatePassword();
-  //     } else {
-  //       window.alert("Your password length must be at least 8 characters and at most 128 characters.");
-  //       generatePassword();
-  //   }
+  function generatePassword() {
+    // make a window prompt ath asked for the length of password and variable that storeses the answer
+    var userLengthChoice =  window.prompt("How many characters long do you want your password?");
+    // if statment that either takes the number they choose,  or denies if <8 or >128
+    if ( userLengthChoice >= 8 && userLengthChoice <= 128) {
+      userLengthChoice = userLengthChoice
+       // if statment for if user presses cancel it ends the function
+      } else if (!userLengthChoice) {
+        return;
+      } else if (isNaN(userLengthChoice)) { 
+        window.alert("Your password length must be a number.");
+        generatePassword();
+      } else {
+        window.alert("Your password length must be at least 8 characters and at most 128 characters.");
+        generatePassword();
+    }
     
-  //   console.log (userLengthChoice);
+    console.log (userLengthChoice);
    
     // make a confirm prompt for whether or not to include uppercase and variable that stores the answer      use if statements to store the values
 
