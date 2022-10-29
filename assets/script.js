@@ -5,8 +5,7 @@ var lowercaseCharacters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"
 var numericCharacters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialCharacters = ['`', "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", '<', '>', '?', "+", "-", ',', "=", ":", '/', '.', "[", "]", "|", "{", "}"];
 var chosenArrays = [];
-var password = "";
-var userLengthChoice =  window.prompt("How many characters do you want in your password?");
+var generatedPassword = "";
 
 // Write password to the #password input
 function writePassword() {
@@ -36,7 +35,7 @@ function writePassword() {
 
     var userUppercaseChoice =  window.confirm("Would you like to include uppercase letters?");
 
-    if (userUppercaseChoice) {
+    if (userUppercaseChoice === true) {
       userUppercaseChoice = userUppercaseChoice;
     } else {
       userUppercaseChoice = userUppercaseChoice;
@@ -161,12 +160,12 @@ function writePassword() {
 for (var i = 0; i < userLengthChoice; i++) {
   var index = Math.floor(Math.random() * chosenArrays.length);
   var chosenIndex = chosenArrays[index];
-  // var password = password.concat(chosenIndex);
+  generatedPassword = generatedPassword.concat(chosenIndex);
 }
 
-console.log(password)
+console.log(generatedPassword)
 
-  passwordText.value = password;
+  passwordText.value = generatedPassword;
   }
 }
 // Add event listener to generate button
