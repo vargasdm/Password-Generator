@@ -4,8 +4,7 @@ var uppercaseCharacters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"
 var lowercaseCharacters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numericCharacters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialCharacters = ["`", "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "<", ">", "?", "+", "-", ",", "=", ":", "/", '.', "[", "]", "|", "{", "}"];
-var chosenArrays = [];
-var generatedPassword = "";
+
 
 // Write password to the #password input
 function writePassword() {
@@ -13,6 +12,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   // declare generatepassword function
   function generatePassword() {
+    var chosenArrays = [];
+    var generatedPassword = "";
     // make a window prompt ath asked for the length of password and variable that storeses the answer
     var userLengthChoice =  window.prompt("How many characters long do you want your password?");
     // if statment that either takes the number they choose,  or denies if <8 or >128
@@ -144,8 +145,6 @@ console.log(generatedPassword)
   passwordText.value = generatedPassword;
   
   }
-
-
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
