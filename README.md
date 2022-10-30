@@ -2,7 +2,7 @@
 
 ##Description
 
-The purpose of this project was to make our client a password generator that would randomly generate a password based on criteria selected by the user. This project was made in order to create strong passwords for better security.
+The purpose of this project was to make our client a password generator that would randomly generate a password based on criteria selected by the user. This project was made in order to create strong passwords for better security and solve the problem of having to think of a strong password used for sensitive information on your own.
 
 During this project I learned: how and when to call javascript variables and functions, if statements, for loops, accessing and manipulating global object properties using Javascript, how to randomly select a number, and the use of eventlistener.
 
